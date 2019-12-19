@@ -1,0 +1,447 @@
+{
+    "id": "c1fdb0c7f9a73adf7e93d6e086c70489",
+    "name": "Geo Mark Web Service",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "125b4dac3b97401f2b7c884e56f17fbb",
+            "name": "Create a new geomark by copying the geometries from one or more existing geomarks from the current server.",
+            "url": "httpsapps.gov.bc.ca\/pub\/geomark\/geomarks\/copy",
+            "description": "The source geomarks can be specified by with the geomarkUrl parameter.  Repeat the parameter if sourcing from multiple geomarks",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "geomarkUrl",
+                    "description": "One or more geomark URLs or identifiers to create the new geomark from.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resultFormat",
+                    "description": "The file format the geomark info resource should be returned using.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "The callback function a JSON result format would be wrapped in to support Ajax requests.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "redirectUrl",
+                    "description": "The optional external URL to redirect the user to when the geomark is created rather than showing the geomark info page. The geomarkId and geomarkUrl query string parameters will be added to the redirectUrl so that the target application gets a reference to the geomark.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "failureRedirectUrl",
+                    "description": "The url to redirect if the geomark could not be created. The URL will include a <fieldName>_Error parameter with the error message for the field that caused the error.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bufferMetres",
+                    "description": "The amount to buffer the geometry in metres, must only contain numerical digits (e.g 10). Leave blank and no buffer will be added to input geometries. If blank then any Point, LineString, MultiPoint and MultiLineString geometries will be ignored.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bufferJoin",
+                    "description": "If bufferMetres is specified, The style of buffer to use for joins between the line segments for lines and polygons.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bufferCap",
+                    "description": "If bufferMetres is specified, The style of buffer to use at the ends of a buffered line.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bufferMitreLimit",
+                    "description": "If bufferMetres is specified, the maximum ratio of distance from the original geometry to a mitre buffer point and the buffer amount. If the ratio is greater than this a bevel will be used instead. This prevents infinite distances when the angle between the two lines at a join is small. Must be > 0.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bufferSegments",
+                    "description": "If bufferMetres is specified, the number of line segments used in each quadrant to approximate the curve for round end-cap and join styles. Must be > 0.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c1fdb0c7f9a73adf7e93d6e086c70489",
+            "rawModeData": ""
+        },
+        {
+            "id": "59476e36792657e7889687f562686139",
+            "name": "Create a new geomark",
+            "url": "httpsapps.gov.bc.ca\/pub\/geomark\/geomarks\/new",
+            "description": "Create a new geomark from the geometries read from the 'body' parameter or file.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "format",
+                    "description": "The file format name extension of the input geometry.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srid",
+                    "description": "The srid of the coordinate system the input geometries are in. If the file includes a coordinate system definition that will be used.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resultFormat",
+                    "description": "The file format the geomark info resource should be returned using.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "multiple",
+                    "description": "Boolean flag indicating if multiple geometries are to be used for the geomark (true) or only a single geometry from the first geometry (false).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "The callback function a JSON result format would be wrapped in to support Ajax requests.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "redirectUrl",
+                    "description": "The optional external URL to redirect the user to when the geomark is created rather than showing the geomark info page. The geomarkId and geomarkUrl query string parameters will be added to the redirectUrl so that the target application gets a reference to the geomark.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "failureRedirectUrl",
+                    "description": "The url to redirect if the geomark could not be created. The URL will include a <fieldName>_Error parameter with the error message for the field that caused the error.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bufferMetres",
+                    "description": "The amount to buffer the geometry in metres, must only contain numerical digits (e.g 10). Leave blank and no buffer will be added to input geometries. If blank then any Point, LineString, MultiPoint and MultiLineString geometries will be ignored.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bufferJoin",
+                    "description": "If bufferMetres is specified, The style of buffer to use for joins between the line segments for lines and polygons.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bufferCap",
+                    "description": "If bufferMetres is specified, The style of buffer to use at the ends of a buffered line.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bufferMitreLimit",
+                    "description": "If bufferMetres is specified, the maximum ratio of distance from the original geometry to a mitre buffer point and the buffer amount. If the ratio is greater than this a bevel will be used instead. This prevents infinite distances when the angle between the two lines at a join is small. Must be > 0.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bufferSegments",
+                    "description": "If bufferMetres is specified, the number of line segments used in each quadrant to approximate the curve for round end-cap and join styles. Must be > 0.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The binary or character content representing the geometry or geometries",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c1fdb0c7f9a73adf7e93d6e086c70489",
+            "rawModeData": ""
+        },
+        {
+            "id": "fa2089c2b6ecf8043497c2f6ebefeb2d",
+            "name": "Get information about a particular geomark",
+            "url": "httpsapps.gov.bc.ca\/pub\/geomark\/geomarks\/{geomarkId}.{fileFormatExtension}",
+            "description": "The attribution can be downloaded as a info file format. The download files can then be processed by a client application to access the geomark info fields and to get the URLs to the geometry download resources.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "geomarkId",
+                    "description": "The unique identifier for the geomark (e.g. gm-abcdefghijklmnopqrstuv0bcislands).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileFormatExtension",
+                    "description": "The file format name extension used to represent the geomark download.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srid",
+                    "description": "The srid of the coordinate system the geometry should be converted to.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c1fdb0c7f9a73adf7e93d6e086c70489",
+            "rawModeData": ""
+        },
+        {
+            "id": "53c75004f41065d9c900d646ca7388a5",
+            "name": "Gets the bounding box of the geomark",
+            "url": "httpsapps.gov.bc.ca\/pub\/geomark\/geomarks\/{geomarkId}\/boundingBox.{fileFormatExtension}",
+            "description": "The source geomarks can be specified by with the geomarkUrl parameter.  Repeat the parameter if sourcing from multiple geomarks",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "geomarkId",
+                    "description": "The unique identifier for the geomark (e.g. gm-abcdefghijklmnopqrstuv0bcislands).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileFormatExtension",
+                    "description": "The file format name extension used to represent the geomark download.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srid",
+                    "description": "The srid of the coordinate system the geometry should be converted to.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c1fdb0c7f9a73adf7e93d6e086c70489",
+            "rawModeData": ""
+        },
+        {
+            "id": "fdee3ef0636c02d0cd00e4e10944d365",
+            "name": "Get the feature and attribution of the geomark",
+            "url": "httpsapps.gov.bc.ca\/pub\/geomark\/geomarks\/{geomarkId}\/feature.{fileFormatExtension}",
+            "description": "The geomark feature resource returns a single spatial feature with either a single (Point, LineString, Polygon) or multi-part geometry (MultiPoint, MultiLineString, MultiPolygon) and the geomark attribution.  The geometry and attribution can be downloaded as a spatial download file format in a supported coordinate system. The download files can then be used in a desktop GIS application (e.g. ArcMap), Google Earth or a web mapping application.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "geomarkId",
+                    "description": "The unique identifier for the geomark (e.g. gm-abcdefghijklmnopqrstuv0bcislands).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileFormatExtension",
+                    "description": "The file format name extension used to represent the geomark download.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srid",
+                    "description": "The srid of the coordinate system the geometry should be converted to.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c1fdb0c7f9a73adf7e93d6e086c70489",
+            "rawModeData": ""
+        },
+        {
+            "id": "e74b42fd5ae1989bbc6fb99697cb3cd0",
+            "name": "Get the individual geometries within a multi-part geometry",
+            "url": "httpsapps.gov.bc.ca\/pub\/geomark\/geomarks\/{geomarkId}\/parts.{fileFormatExtension}",
+            "description": "The geomark parts resource returns a one or more spatial features. One for each part of the Geomark's geomerty. Each part contains a single (Point, LineString, Polygon) geometry and the geomark attribution.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "geomarkId",
+                    "description": "The unique identifier for the geomark (e.g. gm-abcdefghijklmnopqrstuv0bcislands).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileFormatExtension",
+                    "description": "The file format name extension used to represent the geomark download.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srid",
+                    "description": "The srid of the coordinate system the geometry should be converted to.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c1fdb0c7f9a73adf7e93d6e086c70489",
+            "rawModeData": ""
+        },
+        {
+            "id": "2779b5af02830f4606a8024ccd3223db",
+            "name": "Gets a single spatial point representative of the geomark.",
+            "url": "httpsapps.gov.bc.ca\/pub\/geomark\/geomarks\/{geomarkId}\/point.{fileFormatExtension}",
+            "description": "The geomark point resource returns a single spatial feature with a single Point and the geomark attribution.  The point geometry will be created from the first geometry part of the Geomark. Point geomarks will return the first Point part in the geomark.  LineString geomarks will return the first coordinate of the first LineString part in the geomark. Polygon geomarks will return the centroid or another point inside the first Polygon part in the geomark. The geometry and attribution can be downlo",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "geomarkId",
+                    "description": "The unique identifier for the geomark (e.g. gm-abcdefghijklmnopqrstuv0bcislands).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fileFormatExtension",
+                    "description": "The file format name extension used to represent the geomark download.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "srid",
+                    "description": "The srid of the coordinate system the geometry should be converted to.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c1fdb0c7f9a73adf7e93d6e086c70489",
+            "rawModeData": ""
+        }
+    ]
+}
