@@ -1,5 +1,5 @@
 {
-    "id": "c1fdb0c7f9a73adf7e93d6e086c70489",
+    "id": "754f5dff698f3d60e0af29d5a0fe302d",
     "name": "Geo Mark Web Service",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "125b4dac3b97401f2b7c884e56f17fbb",
+            "id": "4e82fce152fd5030cab49eac330934ff",
             "name": "Create a new geomark by copying the geometries from one or more existing geomarks from the current server.",
             "url": "httpsapps.gov.bc.ca\/pub\/geomark\/geomarks\/copy",
             "description": "The source geomarks can be specified by with the geomarkUrl parameter.  Repeat the parameter if sourcing from multiple geomarks",
@@ -100,11 +100,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1fdb0c7f9a73adf7e93d6e086c70489",
+            "collectionId": "754f5dff698f3d60e0af29d5a0fe302d",
             "rawModeData": ""
         },
         {
-            "id": "59476e36792657e7889687f562686139",
+            "id": "e22ca983c3d8c8cde37bbdb6729d2512",
             "name": "Create a new geomark",
             "url": "httpsapps.gov.bc.ca\/pub\/geomark\/geomarks\/new",
             "description": "Create a new geomark from the geometries read from the 'body' parameter or file.",
@@ -215,11 +215,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1fdb0c7f9a73adf7e93d6e086c70489",
+            "collectionId": "754f5dff698f3d60e0af29d5a0fe302d",
             "rawModeData": ""
         },
         {
-            "id": "fa2089c2b6ecf8043497c2f6ebefeb2d",
+            "id": "c9ca092378d32faf4f05863c51d510f2",
             "name": "Get information about a particular geomark",
             "url": "httpsapps.gov.bc.ca\/pub\/geomark\/geomarks\/{geomarkId}.{fileFormatExtension}",
             "description": "The attribution can be downloaded as a info file format. The download files can then be processed by a client application to access the geomark info fields and to get the URLs to the geometry download resources.",
@@ -260,11 +260,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1fdb0c7f9a73adf7e93d6e086c70489",
+            "collectionId": "754f5dff698f3d60e0af29d5a0fe302d",
             "rawModeData": ""
         },
         {
-            "id": "53c75004f41065d9c900d646ca7388a5",
+            "id": "615f3a02c0dd9344ab2ab432c563eb5e",
             "name": "Gets the bounding box of the geomark",
             "url": "httpsapps.gov.bc.ca\/pub\/geomark\/geomarks\/{geomarkId}\/boundingBox.{fileFormatExtension}",
             "description": "The source geomarks can be specified by with the geomarkUrl parameter.  Repeat the parameter if sourcing from multiple geomarks",
@@ -305,11 +305,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1fdb0c7f9a73adf7e93d6e086c70489",
+            "collectionId": "754f5dff698f3d60e0af29d5a0fe302d",
             "rawModeData": ""
         },
         {
-            "id": "fdee3ef0636c02d0cd00e4e10944d365",
+            "id": "1488745b66cc3e98d058d2f99cac9a9b",
             "name": "Get the feature and attribution of the geomark",
             "url": "httpsapps.gov.bc.ca\/pub\/geomark\/geomarks\/{geomarkId}\/feature.{fileFormatExtension}",
             "description": "The geomark feature resource returns a single spatial feature with either a single (Point, LineString, Polygon) or multi-part geometry (MultiPoint, MultiLineString, MultiPolygon) and the geomark attribution.  The geometry and attribution can be downloaded as a spatial download file format in a supported coordinate system. The download files can then be used in a desktop GIS application (e.g. ArcMap), Google Earth or a web mapping application.",
@@ -350,11 +350,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1fdb0c7f9a73adf7e93d6e086c70489",
+            "collectionId": "754f5dff698f3d60e0af29d5a0fe302d",
             "rawModeData": ""
         },
         {
-            "id": "e74b42fd5ae1989bbc6fb99697cb3cd0",
+            "id": "d0d9fefc2eec6e29378386dd27cbde32",
             "name": "Get the individual geometries within a multi-part geometry",
             "url": "httpsapps.gov.bc.ca\/pub\/geomark\/geomarks\/{geomarkId}\/parts.{fileFormatExtension}",
             "description": "The geomark parts resource returns a one or more spatial features. One for each part of the Geomark's geomerty. Each part contains a single (Point, LineString, Polygon) geometry and the geomark attribution.",
@@ -395,11 +395,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1fdb0c7f9a73adf7e93d6e086c70489",
+            "collectionId": "754f5dff698f3d60e0af29d5a0fe302d",
             "rawModeData": ""
         },
         {
-            "id": "2779b5af02830f4606a8024ccd3223db",
+            "id": "88d78e1aabcd021e69c9459365c9ddc9",
             "name": "Gets a single spatial point representative of the geomark.",
             "url": "httpsapps.gov.bc.ca\/pub\/geomark\/geomarks\/{geomarkId}\/point.{fileFormatExtension}",
             "description": "The geomark point resource returns a single spatial feature with a single Point and the geomark attribution.  The point geometry will be created from the first geometry part of the Geomark. Point geomarks will return the first Point part in the geomark.  LineString geomarks will return the first coordinate of the first LineString part in the geomark. Polygon geomarks will return the centroid or another point inside the first Polygon part in the geomark. The geometry and attribution can be downlo",
@@ -440,7 +440,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1fdb0c7f9a73adf7e93d6e086c70489",
+            "collectionId": "754f5dff698f3d60e0af29d5a0fe302d",
             "rawModeData": ""
         }
     ]
