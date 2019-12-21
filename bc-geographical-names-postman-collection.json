@@ -1,5 +1,5 @@
 {
-    "id": "30839bda0849f6f09233bfefa6e222a2",
+    "id": "c7545a7d0d8e836588d2b9d0ea6227b9",
     "name": "BC Geographical Names",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "55dd1c9ab957502caac9b13a4f658319",
+            "id": "9bacc6e1ac711bd070175fd1e58c7495",
             "name": "Get all feature categories",
             "url": "httpsapps.gov.bc.ca\/pub\/bcgnws\/featureCategories",
             "description": "Gets a list of all feature categories used by the BC Geographical Names Information System (BCGNIS).  Note: there are three levels of classification in the BCGNIS feature taxonomy: classes, categories and types.  A type is a subset of a category, and a category is a subset of a class.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30839bda0849f6f09233bfefa6e222a2",
+            "collectionId": "c7545a7d0d8e836588d2b9d0ea6227b9",
             "rawModeData": ""
         },
         {
-            "id": "fde61e25cd9142aec886474b97e69a01",
+            "id": "dce835a37243c404bb568cddf42cfddd",
             "name": "Get all feature classes",
             "url": "httpsapps.gov.bc.ca\/pub\/bcgnws\/featureClasses",
             "description": "Gets a list of all feature classes used by the BC Geographical Names Information System (BCGNIS).  Note: there are three levels of classification in the BCGNIS feature taxonomy: classes, categories and types.  A type is a subset of a category, and a category is a subset of a class.",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30839bda0849f6f09233bfefa6e222a2",
+            "collectionId": "c7545a7d0d8e836588d2b9d0ea6227b9",
             "rawModeData": ""
         },
         {
-            "id": "5ebaa678665f7de088bb2c4058165107",
+            "id": "9d66c076f43072677267bce9014ec213",
             "name": "Get all feature types",
             "url": "httpsapps.gov.bc.ca\/pub\/bcgnws\/featureTypes",
             "description": "Gets a list of all feature types used by the BC Geographical Names Information System (BCGNIS).  Note: there are three levels of classification in the BCGNIS feature taxonomy: classes, categories and types.  A type is a subset of a category, and a category is a subset of a class.",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30839bda0849f6f09233bfefa6e222a2",
+            "collectionId": "c7545a7d0d8e836588d2b9d0ea6227b9",
             "rawModeData": ""
         },
         {
-            "id": "dc8b199ab2ca5ca86d2698016bc9ed07",
+            "id": "09d59f9200167223feac60b6422ce6e9",
             "name": "Get a feature by its featureId",
             "url": "httpsapps.gov.bc.ca\/pub\/bcgnws\/features\/{featureId}",
             "description": "Get information about the geographical feature with the specified featureId.",
@@ -130,11 +130,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30839bda0849f6f09233bfefa6e222a2",
+            "collectionId": "c7545a7d0d8e836588d2b9d0ea6227b9",
             "rawModeData": ""
         },
         {
-            "id": "9fd3ceabafa1df4c450554e31e8e79f3",
+            "id": "f066f518a67e3be96a116dd6f6ca66e0",
             "name": "Get all name authorities",
             "url": "httpsapps.gov.bc.ca\/pub\/bcgnws\/nameAuthorities",
             "description": "Gets a list of all name authorities responsible for naming decisions of the geographical names in the BC Geographical Names Information System (BCGNIS)",
@@ -161,11 +161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30839bda0849f6f09233bfefa6e222a2",
+            "collectionId": "c7545a7d0d8e836588d2b9d0ea6227b9",
             "rawModeData": ""
         },
         {
-            "id": "1e7c27767e7c739857ae2070d0052d5b",
+            "id": "3c512091e21f49dd279bea1a0a01433e",
             "name": "Search for names with metadata changes in a given period",
             "url": "httpsapps.gov.bc.ca\/pub\/bcgnws\/names\/changes",
             "description": "Search for information about geographical names which have changed most recently within a specified time window.  Changes may include status cupdates and metadata corrections.",
@@ -269,11 +269,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30839bda0849f6f09233bfefa6e222a2",
+            "collectionId": "c7545a7d0d8e836588d2b9d0ea6227b9",
             "rawModeData": ""
         },
         {
-            "id": "7318bfdd30179e199e9559445bd0b56b",
+            "id": "425c076241f50a019ad1fe798e5b7f27",
             "name": "Search for names affected by recent naming decision",
             "url": "httpsapps.gov.bc.ca\/pub\/bcgnws\/names\/decisions\/recent",
             "description": "Search for information about geographical names affected by naming 'decisions' made by the BC Geographical Names Office (naming authority) within the last X days.",
@@ -370,11 +370,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30839bda0849f6f09233bfefa6e222a2",
+            "collectionId": "c7545a7d0d8e836588d2b9d0ea6227b9",
             "rawModeData": ""
         },
         {
-            "id": "d82bd7a1216a077bc11c2bdfd50a31e0",
+            "id": "958f6e505858fb8435d5376c81a0efe2",
             "name": "Search for names affected by naming decisions in a given year",
             "url": "httpsapps.gov.bc.ca\/pub\/bcgnws\/names\/decisions\/year",
             "description": "Search for information about geographical names affected by naming 'decisions' made by the BC Geographical Names Office (naming authority) in a given year.",
@@ -471,11 +471,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30839bda0849f6f09233bfefa6e222a2",
+            "collectionId": "c7545a7d0d8e836588d2b9d0ea6227b9",
             "rawModeData": ""
         },
         {
-            "id": "6f8e946501cadfc4f8bb71315b59c82f",
+            "id": "e6f7abaf2f17a07c448e30ac36e9815b",
             "name": "Search in a geographic area",
             "url": "httpsapps.gov.bc.ca\/pub\/bcgnws\/names\/inside",
             "description": "Search for information about geographical names that correspond to features within a geographic bounding box.  Various options and filter parameters are available to refine the search.",
@@ -572,11 +572,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30839bda0849f6f09233bfefa6e222a2",
+            "collectionId": "c7545a7d0d8e836588d2b9d0ea6227b9",
             "rawModeData": ""
         },
         {
-            "id": "9205f610fe5a9f2001216edaeb10a426",
+            "id": "33506e8302b6b439e605009ce07a5615",
             "name": "Search near to a geographic point",
             "url": "httpsapps.gov.bc.ca\/pub\/bcgnws\/names\/near",
             "description": "Search for information about geographical names that correspond to features within a geographic area defined by a centre point and a radius.  Various options and filter parameters are available to refine the search.",
@@ -680,11 +680,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30839bda0849f6f09233bfefa6e222a2",
+            "collectionId": "c7545a7d0d8e836588d2b9d0ea6227b9",
             "rawModeData": ""
         },
         {
-            "id": "12255090892172481d40fc12f7dc5e76",
+            "id": "01f870401cbae5a2ca581f0d3c7df081",
             "name": "Search by name, limit to unofficial names only",
             "url": "httpsapps.gov.bc.ca\/pub\/bcgnws\/names\/notOfficial\/search",
             "description": "Search for information about unofficial geographical names by the text of the name itself.  Various options and filter parameters are available to refine the search.",
@@ -788,11 +788,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30839bda0849f6f09233bfefa6e222a2",
+            "collectionId": "c7545a7d0d8e836588d2b9d0ea6227b9",
             "rawModeData": ""
         },
         {
-            "id": "da7e03003ce9c7773fe4b4497973b302",
+            "id": "ceea18c083f24c83be0d9c3c920fa733",
             "name": "Search by name, limit to official names only",
             "url": "httpsapps.gov.bc.ca\/pub\/bcgnws\/names\/official\/search",
             "description": "Search for information about official geographical names by the text of the name itself.  Various options and filter parameters are available to refine the search.",
@@ -896,11 +896,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30839bda0849f6f09233bfefa6e222a2",
+            "collectionId": "c7545a7d0d8e836588d2b9d0ea6227b9",
             "rawModeData": ""
         },
         {
-            "id": "f19d5febea50bddbb5fc2757f4068a33",
+            "id": "9be16ca33ea94c2ff5390da8d98e09ed",
             "name": "Search by name",
             "url": "httpsapps.gov.bc.ca\/pub\/bcgnws\/names\/search",
             "description": "Search for information about geographical names by the text of the name itself.  The response will include both official and unofficial names.  Various options and filter parameters are available to refine the search.",
@@ -1004,11 +1004,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30839bda0849f6f09233bfefa6e222a2",
+            "collectionId": "c7545a7d0d8e836588d2b9d0ea6227b9",
             "rawModeData": ""
         },
         {
-            "id": "8bbb7ea4c550ee0d07ae6dcc654c2f60",
+            "id": "21252c4d05bd8ecb1477c43060024911",
             "name": "Get a name by its nameId",
             "url": "httpsapps.gov.bc.ca\/pub\/bcgnws\/names\/{nameId}.{outputFormat}",
             "description": "Get information about the geographical name with the specified nameId.",
@@ -1042,7 +1042,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30839bda0849f6f09233bfefa6e222a2",
+            "collectionId": "c7545a7d0d8e836588d2b9d0ea6227b9",
             "rawModeData": ""
         }
     ]
