@@ -10,8 +10,8 @@
         "have api",
         "locations"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-20",
+    "modified": "2019-12-20",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/bc-geographical-names\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -25,11 +25,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/geo-mark-web-service.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/bc-geographical-names\/master\/geo-mark-web-service-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/geo-mark-web-service-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/geo-mark-web-service.json"
                 }
             ]
         },
@@ -43,17 +43,21 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/bc-geographical-names.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/bc-geographical-names\/master\/bc-geographical-names-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/bc-geographical-names-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/bc-geographical-names.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Website",
             "url": "https:\/\/apps.gov.bc.ca\/pub\/bcgnws\/"
